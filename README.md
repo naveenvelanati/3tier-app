@@ -202,10 +202,10 @@ See `devops/ci-cd/gitlab-ci.yml` for GitLab implementation.
 ### Dashboards
 
 Access monitoring dashboards:
-- **Grafana**: `https://grafana.yourdomain.com`
-- **Prometheus**: `https://prometheus.yourdomain.com`
-- **Kibana**: `https://kibana.yourdomain.com`
-- **Jaeger (Tracing)**: `https://jaeger.yourdomain.com`
+- **Grafana**: `https://grafana.amaravathi.today`
+- **Prometheus**: `https://prometheus.amaravathi.today`
+- **Kibana**: `https://kibana.amaravathi.today`
+- **Jaeger (Tracing)**: `https://jaeger.amaravathi.today`
 
 ### Key Metrics
 
@@ -347,7 +347,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Documentation: [docs/](docs/)
 - Issues: GitHub Issues
-- Email: support@yourdomain.com
+- Email: naveenkumarvelanati@gmailcom
 
 ## 🙏 Acknowledgments
 
