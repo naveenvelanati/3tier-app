@@ -1,0 +1,55 @@
+# ============================================
+# Terraform Variables - Production Example
+# Copy to terraform.tfvars and update values
+# ============================================
+
+# General Configuration
+aws_region  = "us-east-1"
+dr_region   = "us-west-2"
+environment = "production"
+project_name = "high-availability-app"
+cost_center = "engineering"
+owner_email = "devops@yourdomain.com"
+
+# VPC Configuration
+vpc_cidr              = "10.0.0.0/16"
+public_subnet_cidrs   = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+private_subnet_cidrs  = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
+database_subnet_cidrs = ["10.0.20.0/24", "10.0.21.0/24", "10.0.22.0/24"]
+
+enable_vpn_gateway = false
+allowed_cidr_blocks = ["0.0.0.0/0"]  # Restrict this in production
+
+# EKS Configuration
+eks_cluster_version = "1.28"
+node_group_desired_capacity = 3
+node_group_min_capacity = 3
+node_group_max_capacity = 10
+
+# RDS Configuration
+rds_instance_class = "db.r6g.large"
+rds_allocated_storage = 100
+rds_max_allocated_storage = 1000
+mysql_database_name = "production_db"
+mysql_master_username = "admin"
+
+# DocumentDB Configuration
+docdb_instance_class = "db.r6g.large"
+mongodb_master_username = "admin"
+
+# ElastiCache Configuration
+redis_node_type = "cache.r6g.large"
+
+# CloudFront Configuration
+cloudfront_price_class = "PriceClass_All"
+
+# Domain Configuration
+primary_domain = "yourdomain.com"
+alternative_domains = ["www.yourdomain.com"]
+frontend_domain_names = ["yourdomain.com", "www.yourdomain.com"]
+
+# Security Configuration
+blocked_countries = []  # Add country codes to block, e.g., ["CN", "RU"]
+
+# Notifications
+alert_email = "alerts@yourdomain.com"
